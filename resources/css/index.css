@@ -1,0 +1,24 @@
+@import url("geral.css");
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    column-gap: 25px;
+    overflow: hidden;
+}
+
+
+.index-image img {
+    width: 200px;
+}
+
+.index-text p {
+    text-indent: 50px;
+    margin-bottom: 25px;
+}
+
+.index-text p::first-letter {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: darkred;
+}

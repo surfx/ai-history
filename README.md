@@ -11,8 +11,9 @@ $ npm i express --save
 
 # URLS
 
-- [Build A Hello World API With Node.js And Express.Js + Postman](https://medium.com/@dharababariya/build-a-hello-world-api-with-node-js-and-express-js-postman-b2e202ebbd44)
 - [localhost](http://localhost:8000)
+- [Fooocus](https://github.com/lllyasviel/Fooocus)
+- [Gothic A1](https://fonts.google.com/specimen/Gothic+A1?query=gothic)
 
 # Github Page
 
