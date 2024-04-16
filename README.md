@@ -6,8 +6,10 @@ AI History - castle init
 
 ```bash
 $ npm init -y
-$ npm i -D nodemon
-$ npm i graphql apollo-server
+$ npm i express --save
 ```
 
-`$ npm start`
+# URLS
+
+- [Build A Hello World API With Node.js And Express.Js + Postman](https://medium.com/@dharababariya/build-a-hello-world-api-with-node-js-and-express-js-postman-b2e202ebbd44)
+- [localhost](http://localhost:8000)
