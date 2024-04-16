@@ -1,6 +1,8 @@
 # ai-history
 
-AI History - castle init
+AI History - castle init - [AI History - index.html](https://surfx.github.io/ai-history/)
+
+<img src="resources\imagens\site-index-image\site-index-html.png" alt="Password Generator">
 
 # node
 
@@ -23,3 +25,7 @@ $ npm i express --save
 
 - [ai render.com](https://ai-history-nodejs.onrender.com)
 - [ai render.com hello world](https://ai-history-nodejs.onrender.com/hello_world)
+
+# Página HTML
+
+- [AI History - index.html](https://surfx.github.io/ai-history/)
