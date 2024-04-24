@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTES</title>
+</head>
+<body>
+    
+<h1>Testes</h1>
+
+<div>
+curl --request POST \
+    --header 'content-type: application/json' \
+    --url https://graphql-projeto001.onrender.com/ \
+    --data '{"query":"query ExampleQuery($nome: String, $usuarioId: Int) {  usuarios {    idade  }  produtos {    id    nome    valor  }  usuario(nome: $nome, id: $usuarioId) {    ativo    id    idade    nome    salario  }}","variables":{"nome":null,"usuarioId":null}}'
+</div>
+
+<script>
+    function testePost(){
+        let url = 'https://graphql-projeto001.onrender.com/';
+        fetch(url, {
+            method: "POST",
+            body: JSON.stringify({"query":"query ExampleQuery($nome: String, $usuarioId: Int) {  usuarios {    idade  }  produtos {    id    nome    valor  }  usuario(nome: $nome, id: $usuarioId) {    ativo    id    idade    nome    salario  }}","variables":{"nome":null,"usuarioId":null}}),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8"
+            }
+          })
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json);
+            document.getElementById('divResultado').innerHTML = JSON.stringify(json);
+        });
+    }
+</script>
+
+<p>
+    <ul>
+        <li>
+            <a href="javascript:testePost();">teste post</a>
+        </li>
+        <li>
+            GraphQL in: https://graphql-projeto001.onrender.com/
+        </li>
+    </ul>
+</p>
+
+<div id="divResultado" style="border: 1pt solid; border-collapse: collapse; padding: 10pt;"></div>
+
+</body>
+</html>

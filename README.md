@@ -1,4 +1,22 @@
-# ai-history
+# AI History
+
+Projeto HTML e CSS
+
+O projeto graphql está em [graphql-projeto001](https://github.com/surfx/graphql-projeto001) e está hospedado em [render.com](https://render.com), disponível em [graphql-projeto001.onrender.com](https://graphql-projeto001.onrender.com/)
+
+exemplo de curl:
+
+```bash
+$ curl --request POST \
+    --header 'content-type: application/json' \
+    --url https://graphql-projeto001.onrender.com/ \
+    --data '{"query":"query ExampleQuery($nome: String, $usuarioId: Int) {\n  usuarios {\n    idade\n  }\n  produtos {\n    id\n    nome\n    valor\n  }\n  usuario(nome: $nome, id: $usuarioId) {\n    ativo\n    id\n    idade\n    nome\n    salario\n  }\n}","variables":{"nome":null,"usuarioId":null}}'
+```
+
+acesso localhost: curl na url [http://localhost:4000/](http://localhost:4000/)
+
+
+# About
 
 AI History - castle init - [AI History - index.html](https://surfx.github.io/ai-history/)
 
